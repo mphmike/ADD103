@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Images</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Using Images</h1>
+    </header>
+    <div id="background">
+      <h2>Background Image</h2>
+    </div>
+    <div id="img-map">
+      <h2>Image Map</h2>
+      <img src="images/workplace.jpg" usemap="#image-map" />
+
+      <map name="image-map">
+        <area
+          target=""
+          alt="Keyboard"
+          title="Keyboard"
+          href="#keyboard"
+          coords="222,271,542,404"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Headphones"
+          title="Headphones"
+          href="#headphones"
+          coords="102,312,100"
+          shape="circle"
+        />
+        <area
+          target=""
+          alt="Hard Drive"
+          title="Hard Drive"
+          href="#harddrive"
+          coords="479,15,624,246"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Mouse"
+          title="Mouse"
+          href="#mouse"
+          coords="560,278,624,404"
+          shape="rect"
+        />
+      </map>
+    </div>
+    <div id="float-left">
+      <h2>Float Left</h2>
+      <p>Lorem, ipsum dolor sit amet consecteture</p>
+      <img src="images/bicycle.jpg" alt="bike" />
+    </div>
+    <div id="float-right">
+      <h2>Float Right</h2>
+      <p style="text-align: right">Lorem, ipsum dolor sit amet consecteture</p>
+      <img src="images/cat.jpg" alt="cat" />
+    </div>
+    <div id="picture-tag">
+      <h2>Picture Tag</h2>
+      <picture>
+        <source media="(min-width: 950px)" srcset="images/tree.jpg" />
+        <source media="(min-width: 665px)" srcset="images/cat.jpg" />
+        <img src="images/tree.jpg" />
+      </picture>
+    </div>
+    <div id="linked-image">
+      <h2>Linked Image</h2>
+      <img
+        src="https://cdn.pixabay.com/photo/2023/09/04/16/21/spider-8233129_1280.jpg"
+        alt="Spider eating"
+      />
+    </div>
+    <div id="img-as-link">
+      <h2>Image As Link</h2>
+      <a href="https://en.wikipedia.org/wiki/Spider-Man"
+        ><img src="images/dogs.jpg" alt="dogs" />
+      </a>
+    </div>
+    <div id="keyboard">
+      <h2>keyboard</h2>
+    </div>
+    <div id="harddrive">
+      <h2>Hard Drive</h2>
+    </div>
+    <div id="headphones">
+      <h2>headphones</h2>
+    </div>
+    <div id="mouse">
+      <h2>mouse</h2>
+    </div>
+  </body>
+</html>
