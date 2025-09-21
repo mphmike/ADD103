@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Image Optimization — Before & After Gallery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <!--
+    Instructions:
+    1) Replace image paths with YOUR OWN photos (put files in the images/ folder).
+    2) Keep each pair: the first figure is the original ("Before"), the second is the optimized ("After — <technique>").
+    3) Complete the figcaptions and meta list items (dimensions, format, file size). You can check file size after export.
+    4) Publish: push to GitHub AND deploy to your MCC cPanel (http://username.mccweb.net/optimization/index.html).
+  --></head>
+  <body>
+    <header class="site-header">
+      <h1>Web Image Optimization</h1>
+      <p class="tagline">
+        Using your own photos to practice core editing skills in a web workflow.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <p>
+          Replace each example with your own work. For each technique, show a
+          <strong>Before</strong> and an <strong>After</strong> image, then
+          describe what you changed. Record dimensions, format, and final file
+          size for the After image.
+        </p>
+        <aside class="help">
+          <h2>Help Links (Photopea)</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.photopea.com/learn/"
+                target="_blank"
+                rel="noopener"
+                >Photopea — Learn (official)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.photopea.com/tuts/how-to-crop-a-photo-online/"
+                target="_blank"
+                rel="noopener"
+                >Crop a Photo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.photopea.com/learn/image-size"
+                target="_blank"
+                rel="noopener"
+                >Image Size / Resize</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.photopea.com/learn/free-transform"
+                target="_blank"
+                rel="noopener"
+                >Free Transform (rotate / scale)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.photopea.com/learn/adjustment-layers"
+                target="_blank"
+                rel="noopener"
+                >Adjustments (exposure / contrast)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.photopea.com/learn/export-jpg"
+                target="_blank"
+                rel="noopener"
+                >Export JPG</a
+              >
+              ·
+              <a
+                href="https://www.photopea.com/learn/export-png"
+                target="_blank"
+                rel="noopener"
+                >Export PNG</a
+              >
+              ·
+              <a
+                href="https://www.photopea.com/learn/export-webp"
+                target="_blank"
+                rel="noopener"
+                >Export WebP</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/playlist?list=PLO3K3VFvlU6D1KgYzMtAyFEBR3mkxl9Yw"
+                target="_blank"
+                rel="noopener"
+                >YouTube Playlist — Photopea Tutorials</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Technique: Crop -->
+      <section id="crop" class="technique">
+        <h2>Crop</h2>
+        <p class="goal">
+          Goal: remove distractions and improve composition (rule of thirds,
+          subject framing).
+        </p>
+        <div class="pair" role="group" aria-label="Crop comparison">
+          <figure>
+            <div class="label before" aria-hidden="true">Before</div>
+            <img
+              src="images/spider1.jpg"
+              alt="Yellow spider blue background"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              I wanted to draw the eye more to the center of the body.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="label after" aria-hidden="true">After — Crop</div>
+            <img
+              src="images/spider1crop.jpg"
+              alt="Close Up Sider"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              I copped in the spider, I thought the desnity of the image going
+              from left to right was nice.
+              <ul class="meta">
+                <li>Dimensions: 3584 x 5669 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: 5700 KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Resize -->
+      <section id="resize" class="technique">
+        <h2>Resize</h2>
+        <p class="goal">
+          Goal: scale the image to an appropriate display width (e.g., 1200px
+          hero, 800px content, 400px thumbnail).
+        </p>
+        <div class="pair" role="group" aria-label="Resize comparison">
+          <figure>
+            <div class="label before" aria-hidden="true">Before</div>
+            <img
+              src="images/spider2.jpg"
+              alt="Original large image"
+              width="1600"
+              height="1067"
+            />
+            <figcaption>Original large image (too big for web use).</figcaption>
+          </figure>
+          <figure>
+            <div class="label after" aria-hidden="true">After — Resize</div>
+            <img
+              src="images/spider2resize.jpg"
+              alt="Resized image suitable for web"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              Resized image to 1200px to keep HD resolution.
+              <ul class="meta">
+                <li>Dimensions: 1200 x 800 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: 143 KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Rotate -->
+      <section id="rotate" class="technique">
+        <h2>Rotate</h2>
+        <p class="goal">Goal: fix horizon tilt or adjust orientation.</p>
+        <div class="pair" role="group" aria-label="Rotate comparison">
+          <figure>
+            <div class="label before" aria-hidden="true">Before</div>
+            <img
+              src="images/spider4.jpg"
+              alt="Spider slightly tilted"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original image — horizon tilted.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after" aria-hidden="true">After — Rotate</div>
+            <img
+              src="images/spider4rotate.jpg"
+              alt="Spider Aligned"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              I rotated the spider so it was level with the screen. Then, I had
+              to crop the image so that the photo filled the canvas.
+              <ul class="meta">
+                <li>Dimensions: 3816 x 2718 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: 1200 KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Flip -->
+      <section id="flip" class="technique">
+        <h2>Flip</h2>
+        <p class="goal">
+          Goal: create a mirrored composition or correct camera orientation if
+          needed.
+        </p>
+        <div class="pair" role="group" aria-label="Flip comparison">
+          <figure>
+            <div class="label before" aria-hidden="true">Before</div>
+            <img
+              src="images/spider5.jpg"
+              alt="Original orientation"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original orientation.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after" aria-hidden="true">After — Flip</div>
+            <img
+              src="images/spider5flip.jpg"
+              alt="Vertically flipped Spider"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              I wanted to see how the Spider would look flipped upsidedown, but
+              now the image look distrupted
+              <ul class="meta">
+                <li>Dimensions: 6960 x 4640 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: 2400 KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Exposure / Contrast -->
+      <section id="exposure" class="technique">
+        <h2>Exposure / Contrast</h2>
+        <p class="goal">
+          Goal: improve clarity with basic tonal adjustments (exposure,
+          contrast, shadows/highlights).
+        </p>
+        <div class="pair" role="group" aria-label="Exposure comparison">
+          <figure>
+            <div class="label before" aria-hidden="true">Before</div>
+            <img
+              src="images/spider3.jpg"
+              alt="Underexposed original image"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original underexposed photo.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after" aria-hidden="true">
+              After — Exposure / Contrast
+            </div>
+            <img
+              src="images/spider3brightness.jpg"
+              alt="Brightened image with improved contrast"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              I turned up the expsure and turned down the gama correction. It
+              gives the image a kind of glow.
+              <ul class="meta">
+                <li>Dimensions: 3910 x 2674 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: 3900 KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Format / Compression -->
+      <section id="format" class="technique">
+        <h2>Format / Compression</h2>
+        <p class="goal">
+          Goal: export to an efficient web format (JPG or WebP) and reduce file
+          size while preserving quality.
+        </p>
+        <div
+          class="pair"
+          role="group"
+          aria-label="Format and compression comparison"
+        >
+          <figure>
+            <div class="label before" aria-hidden="true">Before</div>
+            <img
+              src="images/spider6.png"
+              alt="Original large PNG"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original PNG (large size).</figcaption>
+          </figure>
+          <figure>
+            <div class="label after" aria-hidden="true">
+              After — Export (JPG/WebP)
+            </div>
+            <img
+              src="images/spider6.webp"
+              alt="Optimized JPG or WebP"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              I changed the .png to .WebP. Safari did not support WebP export so
+              I used Mozilla.
+              <ul class="meta">
+                <li>Dimensions: 7267 x 4845 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: 1100 KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Michael Herrmann — Course: ADD 103</p>
+    </footer>
+  </body>
+</html>
