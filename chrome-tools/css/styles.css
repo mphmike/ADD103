@@ -1,0 +1,84 @@
+/* Base Styles */
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+h1,
+h2 {
+  margin: 0 0 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.section {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
