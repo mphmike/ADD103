@@ -1,0 +1,49 @@
+body {
+  background: #c5ffce;
+  font-family: monospace;
+}
+
+img {
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+  padding: 2px;
+  background: #ffffff;
+  border: 3px solid #1bac37;
+  border-radius: 50%;
+}
+
+h1,
+h2 {
+  color: #226d2f;
+  font-family: math;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: #6ea022;
+  font-family: revert;
+}
+
+ul {
+  list-style-type: georgian;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+dt {
+  font-family: cursive;
+  color: #328c41;
+  font-weight: bolder;
+}
+
+dd {
+  font-family: unset;
+  color: darkblue;
+  font-weight: bold;
+}
